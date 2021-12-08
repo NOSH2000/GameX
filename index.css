@@ -50,6 +50,9 @@
     animation: imageAnimation 30s linear infinite 0s;
     backface-visibility: hidden;
     background-size: cover;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
     background-position: center center;
     color: transparent;
     height: 100%;
@@ -94,13 +97,13 @@
         opacity: 0;
     }
 
-    8% {
+    10% {
         animation-timing-function: ease-out;
-        opacity: 0.6;
+        opacity: 1;
     }
 
-    10% {
-        opacity: 0.6;
+    20% {
+        opacity: 1;
     }
 
     25% {
