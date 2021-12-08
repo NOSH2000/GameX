@@ -12,15 +12,7 @@
     border-radius: 25px;
     border: 1px solid black;
   }
-  /*
-  .box {
-    border: 2px solid black;
-    margin: 180px;
-    padding: 50px;
-    height: auto;
-    position: absolute;
-  }
-  */
+
   /* Full-width input fields */
   input[type="text"],
   input[type="password"] {
@@ -64,11 +56,4 @@
     color: dodgerblue;
   }
   
-  /* Set a grey background color and center the text of the "sign in" section 
-  .signin {
-    position: absolute;
-    background-color: white;
-    text-align: bottom;
-    margin: 650px;
-    left: 50px;
-  } */
+ 
