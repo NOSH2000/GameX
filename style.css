@@ -6,8 +6,16 @@ body {
 
 /* navbar */
 /* .navbar{
-    display: flex;
+    position: fixed;
 } */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
 .navbarlinks a {
   font-size: 1em;
@@ -26,9 +34,10 @@ body {
 }
 
 #logo {
-  height: 60px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
   border-radius: 55%;
+  margin-left: 1em;
   /*   display: inline; */
 }
 
