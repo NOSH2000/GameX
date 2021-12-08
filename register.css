@@ -1,6 +1,7 @@
 /* Register */
 /* Add padding to containers */
 .container, .box {
+  background-image: url(img/register.jpeg);
     max-width: 450px;
     width: 100%;
     height: auto;
@@ -11,6 +12,9 @@
     transform: translate(-40%, -10%);
     border-radius: 25px;
     border: 1px solid black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  
   }
 
   /* Full-width input fields */
