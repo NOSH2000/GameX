@@ -1,0 +1,32 @@
+/* .row {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 4px;
+} */
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.images {
+    /* display: table; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    width: 20vw;
+    height: 30vh;
+    border-radius: 5%;
+}
+
+.images #immortal {
+    width: 30vw;
+    height: 35;
+}
