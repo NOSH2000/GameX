@@ -1,104 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>GameX</title>
 
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="icon"
-      href="https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FPOST%20PNG.png?v=1638858028894"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbarlinks">
-        <a href="./register.html"><i class="fa fa-fw fa-user"></i>Register</a>
-        <a href="./contact.html"
-          ><i class="fa fa-fw fa-envelope"></i> Contact Us</a
-        >
-        <a href="./aboutUs.html"><i class="fa fa-users" aria-hidden="true"></i> About Us</a>
-        <a href="./games.html"><i class="fa fa-gamepad" style='font-size:20px'></i> Games</a>
-      </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FPOST%20PNG.png?v=1638858028894"
+        type="image/x-icon" />
+</head>
 
-      <div class="logo">
-        <a href="./index.html">
-          <img
-            src="https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FPOST.jpg?v=1638856188280"
-            alt="GameX Logo"
-            id="logo"
-          />
-        </a>
-      </div>
+<body>
+    <nav class="navbar">
+        <div class="navbarlinks">
+            <a href="./register.html"><i class="fa fa-fw fa-user"></i> Register</a>
+            <a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            <a href="./aboutUs.html"><i class="fa fa-users" aria-hidden="true"></i> About Us</a>
+            <a href="./games.html"><i class="fa fa-gamepad" style="font-size:20px"></i> Games</a>
+        </div>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FPOST.jpg?v=1638856188280"
+                    alt="GameX Logo" id="logo" />
+            </a>
+        </div>
     </nav>
 
     <div class="container">
-      <div style="text-align:center">
-        <h2>Contact Us</h2>
-        <p>Swing by for a game or leave us a message:</p>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img src="" style="width:100%" />
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by for a game or leave us a message:</p>
         </div>
-        <div class="column">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
+        <div class="row">
+            <div class="column">
+                <img src="" style="width:100%" />
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
 
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-              <option value="china">China</option>
-              <option value="india">India</option>
-              <option value="germany">Germany</option>
-              <option value="finland">Finland</option>
-              <option value="mexico">Mexico</option>
-              <option value="other">Other</option>
-            </select>
-            <br />
-            <br />
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Subject"
-            />
-            <label for="message">Your message</label>
-            <br />
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height:170px"
-            ></textarea>
-            <br />
-            <input type="submit" value="Submit" />
-          </form>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="china">China</option>
+                        <option value="india">India</option>
+                        <option value="germany">Germany</option>
+                        <option value="finland">Finland</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br />
+                    <br />
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" />
+                    <label for="message">Your message</label>
+                    <br />
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:170px"></textarea>
+                    <br />
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>

@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 body {
-  font-family: "Montserrat", Helvetica, sans-serif;
-  margin: 1em;
+  font-family: "Montserrat", "Ariel", Helvetica, sans-serif;
 }
 
 /* navbar */
-.navbar {
-  display: inline;
-}
+/* .navbar{
+    display: flex;
+} */
 
 .navbarlinks a {
   font-size: 1em;
@@ -16,12 +15,14 @@ body {
   color: black;
   padding: 10px 16px; /* size of the box when we hover over the nav link*/
   text-decoration: none;
+  z-index: 2;
 }
 
 .navbarlinks a:hover {
   background-color: #ddd;
   text-decoration: underline;
   border-radius: 20%;
+  z-index: 2;
 }
 
 #logo {
@@ -47,6 +48,7 @@ body {
     display: block;
     width: 80px;
     height: 80px;
+    z-index: 2;
   }
 }
 
@@ -59,6 +61,7 @@ body {
     height: 50%;
     margin: 0;
     padding: 14px;
+    z-index: 2;
   }
 }
 /* navbar */
@@ -69,6 +72,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .search_box {
@@ -113,131 +117,68 @@ body {
 
 /*Search Bar*/
 
-/* Register */
-/* Add padding to containers */
-.container {
-  max-width: 350px;
-  width: 100%;
-  height: auto;
-  padding: 60px 45px;
+/*A fullscreen background slideshow with a crossfade transition effect*/
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-}
-.box {
-  border: 2px solid black;
-  margin: 150px;
-  padding: 20px;
-}
-
-/* Full-width input fields */
-input[type="text"],
-input[type="password"] {
+  top: 0px;
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: 1px solid black;
-  background: white;
+  z-index: 0;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-  background: white;
-  outline: none;
+/* Add background images to the slideshow. */
+
+.crossfade > figure:nth-child(1) {
+  background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FBattleField%20Slide%20Show.jpg?v=1638857594891");
 }
 
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FDota%202%20Slide%20Show.jpg?v=1638857615931");
 }
 
-/* Set a style for the submit/register button */
-.registerbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FAC%20Origing%20Slide%20Show.jpg?v=1638857727379");
 }
 
-.registerbtn:hover {
-  opacity: 1;
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FTitanFall%20Slide%20Show.jpeg?v=1638857647301");
 }
 
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FHalo%20Slide%20Show.jpg?v=1638857600215");
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: white;
-  text-align: center;
-}
+/* Create the crossfade effect using CSS3 animations. */
 
-/* Contact Us */
-* {
-  box-sizing: border-box;
-}
-
-/* Style inputs */
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid black;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type="submit"] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: white;
-  padding: 10px;
-}
-
-/* Create two columns that float next to eachother */
-.column {
-  float: right;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
+@keyframes imageAnimation {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    animation-timing-function: ease-out;
+    opacity: 0.6;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
+
+/*fading background*/

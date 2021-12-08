@@ -1,98 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>GameX</title>
 
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="icon"
-      href="https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FPOST%20PNG.png?v=1638858028894"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbarlinks">
-        <a href="./register.html"><i class="fa fa-fw fa-user"></i>Register</a>
-        <a href="./contact.html"
-          ><i class="fa fa-fw fa-envelope"></i> Contact Us</a
-        >
-        <a href="./aboutUs.html"><i class="fa fa-users" aria-hidden="true"></i> About Us</a>
-        <a href="./games.html"><i class="fa fa-gamepad" style='font-size:20px'></i> Games</a>
-      </div>
+    <link rel="stylesheet" href="/register.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FPOST%20PNG.png?v=1638858028894"
+        type="image/x-icon" />
+</head>
 
-      <div class="logo">
-        <a href="./index.html">
-          <img
-            src="https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FPOST.jpg?v=1638856188280"
-            alt="GameX Logo"
-            id="logo"
-          />
-        </a>
-      </div>
+<body>
+    <nav class="navbar">
+        <div class="navbarlinks">
+            <a href="./register.html"><i class="fa fa-fw fa-user"></i> Register</a>
+            <a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            <a href="./aboutUs.html"><i class="fa fa-users" aria-hidden="true"></i> About Us</a>
+            <a href="./games.html"><i class="fa fa-gamepad" style="font-size:20px"></i> Games</a>
+        </div>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FPOST.jpg?v=1638856188280"
+                    alt="GameX Logo" id="logo" />
+            </a>
+        </div>
     </nav>
 
     <form action="/action_page.php">
-      <div class="container">
-        <h1>Register</h1>
-        <p>Please fill in this form to create an account.</p>
-        <hr />
-        <div class="box"
-        <label for="username"><b>Username</b></label>
-        <input
-          type="text"
-          placeholder="Enter Username"
-          name="username"
-          id="username"
-          required
-        />
-        <br />
-        <label for="email"><b>Email</b></label>
-        <input
-          type="text"
-          placeholder="Enter Email"
-          name="email"
-          id="email"
-          required
-        />
-        <br />
-        <label for="psw"><b>Password</b></label>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="psw"
-          id="psw"
-          required
-        />
-        <br />
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input
-          type="password"
-          placeholder="Repeat Password"
-          name="psw-repeat"
-          id="psw-repeat"
-          required
-        />
-        <hr />
-        <p>
-          By creating an account you agree to our
-          <a href="#">Terms & Privacy</a>.
-        </p>
+        <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr />
 
-        <button type="submit" class="registerbtn">Register</button>
-      </div>
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required />
+            <br />
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required />
+            <br />
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required />
+            <br />
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required />
+            <hr />
+            <p>
+                By creating an account you agree to our
+                <a href="#">Terms & Privacy</a>.
+            </p>
 
-      <div class="container signin">
-        <p>Already have an account? <a href="#">Sign in</a>.</p>
-      </div>
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+
+        <div class="container signin">
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
     </form>
-  </div>
-  </body>
+
+</body>
+
 </html>
