@@ -1,0 +1,115 @@
+/*Search Bar*/
+.wrapper {
+    min-height: 80vh;
+    /* Where the bar shows up*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_box {
+    background: black;
+    position: relative;
+    padding: 12px;
+    border-radius: 50px;
+    display: flex;
+}
+
+.search_box .search_btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search_box .input_search {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 0;
+    background: white;
+    border-radius: 50px;
+    padding: 15px 20px;
+    width: 300px;
+    height: 30px;
+    color: black;
+}
+/*Search Bar*/
+
+/*A fullscreen background slideshow with a crossfade transition effect*/
+.crossfade>figure {
+    animation: imageAnimation 30s linear infinite 0s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    color: transparent;
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+
+/* Add background images to the slideshow. */
+.crossfade>figure:nth-child(1) {
+    background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FBattleField%20Slide%20Show.jpg?v=1638857594891");
+}
+
+.crossfade>figure:nth-child(2) {
+    animation-delay: 6s;
+    background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FDota%202%20Slide%20Show.jpg?v=1638857615931");
+}
+
+.crossfade>figure:nth-child(3) {
+    animation-delay: 12s;
+    background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FAC%20Origing%20Slide%20Show.jpg?v=1638857727379");
+}
+
+.crossfade>figure:nth-child(4) {
+    animation-delay: 18s;
+    background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FTitanFall%20Slide%20Show.jpeg?v=1638857647301");
+}
+
+.crossfade>figure:nth-child(5) {
+    animation-delay: 24s;
+    background-image: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FHalo%20Slide%20Show.jpg?v=1638857600215");
+}
+
+/* Create the crossfade effect using CSS3 animations. */
+@keyframes imageAnimation {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    8% {
+        animation-timing-function: ease-out;
+        opacity: 0.6;
+    }
+
+    10% {
+        opacity: 0.6;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*fading background*/
