@@ -1,0 +1,22 @@
+.column {
+    margin-top: 30px;
+    float: left;
+    width: 22.5%;
+    padding: 15px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+    .column {
+        width: 100%;
+    }
+}
+
+img {
+    width: 20vw;
+    height: 30vh;
+}
