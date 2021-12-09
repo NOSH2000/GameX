@@ -16,11 +16,14 @@
 
 <body>
     <nav class="navbar">
-        <div class="navbarlinks">
+        <div class="navbarlinks" id="myTopnav">
             <a href="./register.html"><i class="fa fa-fw fa-user"></i> Register</a>
             <a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
             <a href="./aboutUs.html"><i class="fa fa-users" aria-hidden="true"></i> About Us</a>
             <a href="./games.html"><i class="fa fa-gamepad" style="font-size:20px"></i> Games</a>
+            <a href="javascript:void(0);" class="icon" onclick="resizeBrowser()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
         <div class="logo">
             <a href="./index.html">
@@ -85,6 +88,8 @@
         </div>
     </div>
 
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js"></script>
 </body>
 
 </html>

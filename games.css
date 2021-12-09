@@ -1,3 +1,7 @@
+body {
+    margin-top: 40px;
+}
+
 .column {
     margin-top: 30px;
     float: left;
@@ -11,9 +15,13 @@
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
+    body {
+        margin-top: 180px;
+    }
     .column {
         width: 100%;
     }
+
 }
 
 img {
@@ -21,6 +29,6 @@ img {
     height: 30vh;
 }
 
-h2{
+h2 {
     text-align: center;
 }

@@ -7,13 +7,16 @@
 
     <title>GameX</title>
 
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/index.css" />
     <script src="https://kit.fontawesome.com/dd76e34534.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="icon" href="https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2FPOST%20PNG.png?v=1638858028894"
         type="image/x-icon" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <!-- <link rel="stylesheet" href="/searchbar.css" /> -->
 </head>
 
 <body>
@@ -26,11 +29,14 @@
     </div>
 
     <nav class="navbar">
-        <div class="navbarlinks">
+        <div class="navbarlinks" id="myTopnav">
             <a href="./register.html"><i class="fa fa-fw fa-user"></i> Register</a>
             <a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
             <a href="./aboutUs.html"><i class="fa fa-users" aria-hidden="true"></i> About Us</a>
             <a href="./games.html"><i class="fa fa-gamepad" style="font-size:20px"></i> Games</a>
+            <a href="javascript:void(0);" class="icon" onclick="resizeBrowser()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
         <div class="logo">
             <a href="./index.html">
@@ -42,11 +48,13 @@
 
     <div class="wrapper">
         <div class="search_box">
-            <div class="search_btn"><i class="fas fa-search"></i></div>
             <input id="searchBar" name="searchBar" type="text" class="input_search" placeholder="Choose Your Game" />
+            <div class="search_btn"><i class="fas fa-search"></i></div>
         </div>
     </div>
+
     <!-- Import the webpage's javascript file -->
     <script src="script.js"></script>
 </body>
+
 </html>
