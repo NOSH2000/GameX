@@ -9,24 +9,54 @@
     gap: 4px;
 } */
 
-h1 {
-    font-size: 3em;
-    text-align: center;
+body {
+    margin-top: 10%;
 }
 
-.images {
-    /* display: table; */
-    margin: 0 auto;
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url("../img/dota2.gif") no-repeat center fixed;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+p {
+    font-size: 3em;
     text-align: center;
+    font-weight: bolder;
 }
 
 img {
-    width: 20vw;
-    height: 30vh;
-    border-radius: 5%;
+    width: 12.4vw;
+    height: 25vh;
 }
 
-.images #immortal {
-    width: 30vw;
-    height: 35;
+#dotaImg {
+    width: 45vw;
+    height: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+}
+
+.row {
+    display: flex;
+    left: 0%;
+}
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.column {
+    flex: nowrap;
+    padding: 0px;
+    margin: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
