@@ -45,7 +45,10 @@ body {
     width: 20vw;
     height: 30vh;
     border-radius: 5%;
-    margin-bottom: 100px;
+}
+
+.column img:hover {
+    box-shadow: 10px 5px 5px grey;;
 }
 
 h2 {
