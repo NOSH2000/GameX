@@ -1,6 +1,6 @@
 /* Register */
 /* Add padding to containers */
-.container, .box {
+.container {
   background-image: url(img/register.jpeg);
     max-width: 450px;
     width: 100%;
@@ -13,7 +13,6 @@
     border-radius: 25px;
     border: 1px solid black;
     color: white;
-    opacity: 0.85;
     font-family: 'Times New Roman', Times, serif;
   
   } 
