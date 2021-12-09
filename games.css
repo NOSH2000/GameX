@@ -1,5 +1,6 @@
 body {
     margin-top: 5%;
+    text-shadow: 5px 5px 6px black;
 }
 
 /* .column {
@@ -48,12 +49,13 @@ body {
 }
 
 .column img:hover {
-    box-shadow: 10px 5px 5px grey;;
+    box-shadow: 10px 5px 5px grey;
 }
 
 h2 {
     text-align: center;
     padding: 3%;
+    color: white;
 }
 
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
@@ -62,6 +64,19 @@ h2 {
     grid-template-columns: repeat(3, 5fr);
     grid-template-rows: repeat(3, 20vw);
     grid-gap: 75px;
+}
+
+.row::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url("http://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/306130/de38af9a539865e3d61375297bdca94569b4bcfa.jpg") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.75;
+    z-index: -1;
 }
 
 /* .row {
