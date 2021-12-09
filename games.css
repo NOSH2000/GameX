@@ -20,41 +20,63 @@ body {
     }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .row {
         display: block;
         text-align: center;
     }
-}
+} */
 
-img {
+/* @media screen and (max-width: 900px) {
+    .row {
+        display: grid;
+        text-align: center;
+    }
+
+    .column {
+        padding: 5px, 0%, 5px, 0%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+} */
+
+.column img {
     width: 20vw;
     height: 30vh;
     border-radius: 5%;
+    margin-bottom: 100px;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 5px;
+    padding: 3%;
 }
 
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 .row {
     display: grid;
-    grid-template-columns: repeat(3, 30fr);
+    grid-template-columns: repeat(3, 5fr);
     grid-template-rows: repeat(3, 20vw);
-    grid-gap: 15px;
+    grid-gap: 75px;
 }
 
-
+/* .row {
+    display: flex;
+    left: 0%;
+} */
 .column {
-    flex: wrap;
+    flex: nowrap;
     padding: 0px;
     margin: 0%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
+
 }
 
 .column img {
-    padding-bottom: 10pxß;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
 }
