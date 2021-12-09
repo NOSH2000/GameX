@@ -1,23 +1,41 @@
-body {
-    font-family: sans-serif;
-    background-color: #111d4a;
-}
-
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+    /* background-color: rgb(182, 182, 182); */
+}
+
 h1 {
     color: #eee;
+    /* margin-top: 10px; */
     margin-bottom: 30px;
+    font-weight: 900;
+    padding-top: 25px;
 }
+
 .container {
     padding: 40px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 100%;
     text-align: center;
 }
 
-#charactersList {
+.main::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url("https://cdn.glitch.me/ccd74a08-5814-4e0b-990f-30b66fc3f6f5%2Fwallpaperflare.com_wallpaper.jpg?v=1639079383124") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#playersList {
     padding-inline-start: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -38,17 +56,17 @@ h1 {
 }
 
 #searchWrapper::after {
-    content: '🔍';
+    /* content: '🔍'; */
     position: absolute;
     top: 7px;
     right: 15px;
 }
 
-
 .player {
     list-style-type: none;
-    background-color: #eaeaea;
-    border-radius: 3px;
+    /* background-color: #eaeaea; */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
     padding: 10px 20px;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -58,18 +76,22 @@ h1 {
     text-align: left;
 }
 
-.player > h2 {
+.player:hover {
+    box-shadow: 5px 5px 10px 3px rgb(182, 182, 182);
+}
+
+.player>h2 {
     grid-area: name;
     margin-bottom: 0px;
 }
 
-.player > p {
+.player>p {
     grid-area: house;
     margin: 0;
     margin-top: -18px;
 }
 
-.player > img {
+.player>img {
     max-height: 100px;
     grid-area: image;
 }
